@@ -17,7 +17,7 @@ ypoints = hours_chount
 plt.bar(xpoints, ypoints)
 plt.xticks(xpoints)
 plt.yticks(ypoints)
-plt.title("Satoshi Nakamoto active hours UTC-" + str(-TIME_DELTA))
+plt.title("Satoshi Nakamoto active hours UTC" + str(TIME_DELTA))
 plt.xlabel("Hour")
 plt.ylabel("Numbers of interactions")
 plt.show()

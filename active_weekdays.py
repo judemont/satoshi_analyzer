@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
-TIME_DELTA = -5
+TIME_DELTA = -7
 
 activities = open("./satoshi_activity.txt", "r").readlines()
 
@@ -17,7 +17,7 @@ ypoints = days_chount
 plt.bar(xpoints, ypoints)
 plt.xticks(xpoints)
 plt.yticks(ypoints)
-plt.title("Satoshi Nakamoto active weekdays")
+plt.title("Satoshi Nakamoto active weekdays UTC" + str(TIME_DELTA))
 plt.xlabel("Day (Monday == 0 ... Sunday == 6)")
 plt.ylabel("Numbers of interactions")
 plt.show()
